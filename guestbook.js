@@ -1,5 +1,5 @@
-import { initializeApp } from "firebase/app";
-import { getDatabase, ref, set, onValue } from "firebase/database";
+import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
+import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 
 // ⚠️ REPLACE THIS WITH YOUR ACTUAL FIREBASE CONFIG FROM STEP 1
 const firebaseConfig = {
@@ -20,14 +20,12 @@ const db = getDatabase(app);
 // You can change "global_entry" to a unique user ID later if needed.
 const guestbookRef = ref(db, 'guestbook/global_entry');
 
-set(guestbookRef, "Welcome to the guestbook! Start typing your message here...");
 const textarea = document.getElementById('guestbook-input');
 const statusDiv = document.getElementById('save-status');
 let typingTimer;
 
 // 1. Load existing text from Firebase automatically when page opens
 onValue(guestbookRef, (snapshot) => {
-    //console.log(snapshot.val());
     const data = snapshot.val();
     // Only update textarea if user isn't actively typing to prevent cursor jumps
     if (data && document.activeElement !== textarea) {
