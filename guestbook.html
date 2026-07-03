@@ -3,18 +3,32 @@
     <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Guestbook</title>
-    <style>
-        body { font-family: sans-serif; margin: 40px auto; padding: 20px; }
-        textarea { width: 100%; height: 1000px; padding: 10px; font-size: 16px; box-sizing: border-box; }
-        .status { margin-top: 8px; font-size: 14px; color: #666; font-style: italic; }
-    </style>
+    <link rel="stylesheet" href="styles.css">
+    <title>guestbook</title>
 </head>
 <body>
+    <nav>
+        <ul>
+            <li><a href="index.html">-> Home</a></li>
+            <li><a href="about.html">-> About</a></li>
+            <li><a href="gallery.html">-> Gallery</a></li>
+            <li><a href="guestbook.html">-> Guestbook</a></li>
+            <li><a class="hidden" href="notes.html">-> Notes</a></li>
+        </ul>
+    </nav>
     <h2>Guestbook</h2>
-    <p>Type your message below. It saves automatically!</p>
+    <p id="instructions">Type your message below. It saves automatically!</p>
     <div id="save-status" class="status">Saved.</div>
     <textarea id="guestbook-input" placeholder="Start writing your thoughts here..."></textarea>
     <script type="module" src="guestbook.js"></script>
+
+    <footer>
+        <div id="contact_info">
+            <p>contact: grgsnizamis@gmail.com</p>
+        </div>
+        <div id="copyright_info">
+            <p>Yorgos Nizamis. &copy; All rights reserved, 2026.</p>
+        </div>
+    </footer>
     </body>
 </html>
