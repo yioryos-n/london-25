@@ -7,20 +7,19 @@
     <title>guestbook</title>
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="index.html">-> Home</a></li>
-            <li><a href="about.html">-> About</a></li>
-            <li><a href="gallery.html">-> Gallery</a></li>
-            <li><a href="guestbook.html">-> Guestbook</a></li>
-            <li><a class="hidden" href="notes.html">-> Notes</a></li>
-        </ul>
-    </nav>
-    <h2>Guestbook</h2>
-    <p id="instructions">Type your message below. It saves automatically!</p>
-    <div id="save-status" class="status">Saved.</div>
-    <textarea id="guestbook-input" placeholder="Start writing your thoughts here..."></textarea>
-    <script type="module" src="guestbook.js"></script>
+    <header class="secondary_header">
+        <a href="index.html">
+            <img src="images/arrow.png" width="45px" height="auto" alt="back arrow">
+        </a>
+        <h2>Guestbook</h2>
+    </header>
+
+    <main>
+        <p id="instructions">Type your message below.</p>
+        <div id="save-status" class="status">Saved.</div>
+        <textarea id="guestbook-input" placeholder="Start writing your thoughts here..."></textarea>
+        <script type="module" src="guestbook.js"></script>
+    </main>
 
     <footer>
         <div id="contact_info">
