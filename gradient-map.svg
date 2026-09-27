@@ -1,4 +1,4 @@
-// source: https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/
+<!-- source: https://css-tricks.com/using-svg-to-create-a-duotone-image-effect/ -->
 <svg xmlns="http://www.w3.org/2000/svg">
   <filter id="duotone_pink">
     <feColorMatrix type="matrix" result="grayscale"
