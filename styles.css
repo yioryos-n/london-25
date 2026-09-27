@@ -279,7 +279,7 @@ li {
 }
 
 #gallery-images img:hover {
-    filter: url(gradient-map.svg#duotone_peachypink);
+    filter: url(gradient-map.svg#duotone_pink);
 }
 
 .gallery-link {

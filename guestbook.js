@@ -1,7 +1,7 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-app.js";
 import { getDatabase, ref, set, onValue } from "https://www.gstatic.com/firebasejs/9.22.2/firebase-database.js";
 
-// ⚠️ REPLACE THIS WITH YOUR ACTUAL FIREBASE CONFIG FROM STEP 1
+// Firebase configuration
 const firebaseConfig = {
     apiKey: "AIzaSyBwKhqApGWTRlyc5L905nfIHcxG3u3vD3g",
     authDomain: "london25-guestbook.firebaseapp.com",
@@ -16,8 +16,7 @@ const firebaseConfig = {
 const app = initializeApp(firebaseConfig);
 const db = getDatabase(app);
 
-// For this simple example, we use a single hardcoded reference path.
-// You can change "global_entry" to a unique user ID later if needed.
+// Setting reference path.
 const guestbookRef = ref(db, 'guestbook/global_entry');
 
 const textarea = document.getElementById('guestbook-input');
